@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: PokemonEmeraldNarrow;
-  src: url(SC-fonts/pokemon-emerald-narrow.ttf);
+  src: url(serebiiClone/SC-fonts/pokemon-emerald-narrow.ttf);
 }
 
 @font-face {
   font-family: PokemonGenThreeBattle;
-  src: url(fonts/pokemon-gen3-battle.otf);
+  src: url(serebiiClone/SC-fonts/pokemon-gen3-battle.otf);
 }
 
  :root{
