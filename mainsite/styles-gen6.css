@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+@font-face {
+  font-family: PokemonEmeraldNarrow;
+  src: url(serebiiClone/SC-fonts/pokemon-emerald-narrow.ttf);
+}
+
+@font-face {
+  font-family: PokemonGenThreeBattle;
+  src: url(serebiiClone/SC-fonts/pokemon-gen3-battle.otf);
+}
+
+ :root{
+    --heading-font: PokemonGenThreeBattle;
+    --paragraph-font: PokemonEmeraldNarrow, Lato, Helvetica, sans-serif;
+
+    --primary-color: #EFF9F0   ;
+    --secondary-color: #CC2936 ;
+    --accent1-color: #247BA0;
+    --accent2-color: #4C1A57;
+    --accent3-color: #3D3A4B;
+    --accent4-color: #FDCA40;
+    --accent5-color: #FFA69E;
+ }
+ body{
+    background-color: #EFF9F0;
+    font-family: var(--paragraph-font);
+    color: #247BA0;
+    padding: 50px 50px 50px 50px;
+
+}
+h1, h2, h3{
+    font-size: 35px;
+    font-family: var(--heading-font);
+    background-color:  #CC2936;
+    color: white;
+    text-align: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+#section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    border: #247BA0 solid 6px; 
+    margin:10px 10px 10px 10px ; 
+}
+h1{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+#img1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#img2{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    display: block;
+    margin: auto;
+    width: 50%;
+
+}
+#img3{
+    grid-column: 2/4;
+    grid-row: 4/5;
+
+
+}
+.p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    
+}
+.p1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: #4C1A57;
+    
+}
+.p2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    color: #4C1A57;
+    
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+#section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    border: #247BA0 solid 6px;  
+    margin:10px 10px 10px 10px ; 
+}
+h2{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+#im1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#im2{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#im3{
+    grid-column: 2/4;
+    grid-row: 4/5;
+
+}
+.pp{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.pp1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: #4C1A57;
+}
+.pp2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    color: #4C1A57;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
+#section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    border: #247BA0 solid 6px;  
+    margin:10px 10px 10px 10px ; 
+}
+h3{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+#i1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#i2{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+#i3{
+    grid-column: 2/4;
+    grid-row: 4/5;
+
+}
+.ppp{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.ppp1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: #4C1A57;
+}
+.ppp2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    color: #4C1A57;
+}
