@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: PokemonGenThreeBattle;
-  src: url(serebiiClone/SC-fonts/pokemon-gen3-battle.otf);
+  src: url(../../serebiiClone/SC-styles/fonts/pokemon-gen3-battle.otf);
 }
 
  :root{
