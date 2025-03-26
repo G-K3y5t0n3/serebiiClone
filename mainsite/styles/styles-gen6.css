@@ -32,7 +32,7 @@
 }
 h1, h2, h3{
     font-size: 35px;
-    font-family: var(--heading-font);
+    font-family: var(--paragraph-font);
     background-color:  #CC2936;
     color: white;
     text-align: center;
