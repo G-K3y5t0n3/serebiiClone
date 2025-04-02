@@ -41,7 +41,70 @@ h1, h2, h3{
 }
 
 /* --------------------------------------------------------------------------------------------------------------- */
+.Buttons {
+    display: flex; /* Enables flexbox */
+    gap: 10px; /* Adds space between buttons */
+    justify-content: center; /* Centers buttons horizontally */
+}
 
+.ButtonText {
+    display: flex; /* Enables flexbox for internal alignment */
+
+}
+.ButtonText, .gen_5_button_link, .gen_6_button_link {
+    display: flex;
+    align-items: center;
+    border: 6px solid #ffcc00; /* This applies the border */
+    padding: 10px; /* Adds padding for better spacing */
+    background-color: #ffffff; /* Optional: Background color for visibility */
+    border-radius: 40%; /* Optional: Rounded corners */
+}
+
+.g5_button_link_xtra{
+    text-decoration: none; /* Removes underline */
+    font-size: 2.5rem; /* Makes the text large */
+    color: #247BA0; /* Change to any color (example: yellow) */
+    font-family: 'Arial', sans-serif; /* Change to a different font */
+    font-weight: bold; /* Optional: Make it bold */
+    display: inline-block; /* Helps with spacing if needed */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.g6_button_link_xtra:hover {
+    color: rgba(0, 0, 0, 0) !important;
+}
+
+.home_button_link_xtra{
+    text-decoration: none; /* Removes underline */
+    font-size: 2.5rem; /* Makes the text large */
+    color: #247BA0; /* Change to any color (example: yellow) */
+    font-family: 'Arial', sans-serif; /* Change to a different font */
+    font-weight: bold; /* Optional: Make it bold */
+    display: inline-block; /* Helps with spacing if needed */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.home_button_link_xtra:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+.g6_button_link_xtra{
+    text-decoration: none; /* Removes underline */
+    font-size: 2.5rem; /* Makes the text large */
+    color: #247BA0; /* Change to any color (example: yellow) */
+    font-family: 'Arial', sans-serif; /* Change to a different font */
+    font-weight: bold; /* Optional: Make it bold */
+    display: inline-block; /* Helps with spacing if needed */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.g5_button_link_xtra:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
 #section1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
