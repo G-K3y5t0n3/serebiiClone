@@ -64,7 +64,7 @@ h1, h2, h3{
     text-decoration: none; /* Removes underline */
     font-size: 2.5rem; /* Makes the text large */
     color: #247BA0; /* Change to any color (example: yellow) */
-    font-family: 'Arial', sans-serif; /* Change to a different font */
+    font-family: var(--paragraph-font);
     font-weight: bold; /* Optional: Make it bold */
     display: inline-block; /* Helps with spacing if needed */
     transition: color 0.3s ease; /* Smooth color change on hover */
@@ -78,7 +78,7 @@ h1, h2, h3{
     text-decoration: none; /* Removes underline */
     font-size: 2.5rem; /* Makes the text large */
     color: #247BA0; /* Change to any color (example: yellow) */
-    font-family: 'Arial', sans-serif; /* Change to a different font */
+    font-family: var(--paragraph-font);
     font-weight: bold; /* Optional: Make it bold */
     display: inline-block; /* Helps with spacing if needed */
     transition: color 0.3s ease; /* Smooth color change on hover */
@@ -92,7 +92,7 @@ h1, h2, h3{
     text-decoration: none; /* Removes underline */
     font-size: 2.5rem; /* Makes the text large */
     color: #247BA0; /* Change to any color (example: yellow) */
-    font-family: 'Arial', sans-serif; /* Change to a different font */
+    font-family: var(--paragraph-font);
     font-weight: bold; /* Optional: Make it bold */
     display: inline-block; /* Helps with spacing if needed */
     transition: color 0.3s ease; /* Smooth color change on hover */
