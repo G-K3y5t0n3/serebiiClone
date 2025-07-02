@@ -10,7 +10,7 @@ html, body{
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("PokeHero.png");
+  background-image: url("Pokehero.png");
   /* Set a specific height */
   min-height: 100vb;
   width: 100vw;
