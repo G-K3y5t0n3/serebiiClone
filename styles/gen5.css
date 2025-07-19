@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: PokemonEmeraldNarrow;
-  src: url(../../serebiiClone/site-plan/SC-styles/fonts/pokemon-emerald-narrow.ttf);
+  src: url(/styles/fonts/pokemon-emerald-narrow.ttf);
 }
 
 @font-face {
   font-family: PokemonGenThreeBattle;
-  src: url(../../serebiiClone/site-plan/SC-styles/fonts/pokemon-gen3-battle.otf);
+  src: url(/styles/fonts/pokemon-gen3-battle.otf);
 }
 
  :root {
@@ -31,6 +31,10 @@
   --nav-background-color: #4C1A57;
   --nav-hover-link-color: #FDCA40;
   --nav-hover-background-color: #3D3A4B;
+}
+
+header {
+    margin-bottom: 10px;
 }
 
 .navigationButtons {
