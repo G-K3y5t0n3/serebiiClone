@@ -63,9 +63,11 @@ function pokedexInfoTemplate(pokemon) {
         <!---->
         <div class="pokeInfoP2">
             <img src="${pokemon.stats}" class="pokeStats" alt="snivystats">
-            <button class="nextButton" aria-label="Next">&#9654;</button>
-            <img src="${pokemon.evolution_line}" class="evoLine" alt="snivyevo">
-            <button class="previousButton" aria-label="Previous">&#9664;</button>
+            <div class="evoLineNav">
+                <button class="nextButton" aria-label="Next">&#9654;</button>
+                <img src="${pokemon.evolution_line}" class="evoLine" alt="snivyevo">
+                <button class="previousButton" aria-label="Previous">&#9664;</button>
+            </div>
         </div>`;
 }
 
@@ -120,4 +122,3 @@ function main() {
 }
 
 main();
-

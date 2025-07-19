@@ -35,6 +35,8 @@
 
 header {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .navigationButtons {
@@ -43,55 +45,70 @@ header {
     justify-content: center; /* Centers buttons horizontally */
 }
 
-.navigationButtonTexts {
-    display: flex; /* Enables flexbox for internal alignment */
-
-}
-.navigationButtonTexts, .gen_5_button_link, .gen_6_button_link {
+.homeButton {
     display: flex;
     align-items: center;
-    border: 6px solid #ffcc00; /* This applies the border */
+    border: 6px solid var(--accent3-color); /* This applies the border */
     padding: 10px; /* Adds padding for better spacing */
-    background-color: #ffffff; /* Optional: Background color for visibility */
+    background-color: var(--secondary-color); /* Optional: Background color for visibility */
     border-radius: 40%; /* Optional: Rounded corners */
 }
 
-.home_button_link_xtra {
+.homeButton a {
     text-decoration: none; /* Removes underline */
     font-size: 2.5rem; /* Makes the text large */
-    color: #247BA0; /* Change to any color (example: yellow) */
+    color: var(--primary-color); /* Change to any color (example: yellow) */
     font-family: var(--paragraph-font);
     font-weight: bold; /* Optional: Make it bold */
     display: inline-block; /* Helps with spacing if needed */
     transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
-.home_button_link_xtra:hover {
-    color: var(--accent2-color);
+.gen5Button {
+    display: flex;
+    align-items: center;
+    border: 6px solid var(--accent3-color); /* This applies the border */
+    padding: 10px; /* Adds padding for better spacing */
+    background-color: var(--accent1-color); /* Optional: Background color for visibility */
+    border-radius: 40%; /* Optional: Rounded corners */
 }
 
-.g5_button_link_xtra {
+.gen5Button a {
     text-decoration: none; /* Removes underline */
     font-size: 2.5rem; /* Makes the text large */
-    color: #247BA0; /* Change to any color (example: yellow) */
+    color: var(--secondary-color); /* Change to any color (example: yellow) */
     font-family: var(--paragraph-font);
     font-weight: bold; /* Optional: Make it bold */
     display: inline-block; /* Helps with spacing if needed */
     transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
-.g6_button_link_xtra{
+.gen6Button {
+    display: flex;
+    align-items: center;
+    border: 6px solid var(--accent4-color); /* This applies the border */
+    padding: 10px; /* Adds padding for better spacing */
+    background-color: var(--accent3-color); /* Optional: Background color for visibility */
+    border-radius: 40%; /* Optional: Rounded corners */
+}
+
+.gen6Button a {
     text-decoration: none; /* Removes underline */
     font-size: 2.5rem; /* Makes the text large */
-    color: #247BA0; /* Change to any color (example: yellow) */
+    color: var(--paragraph-color-on-color); /* Change to any color (example: yellow) */
     font-family: var(--paragraph-font);
     font-weight: bold; /* Optional: Make it bold */
     display: inline-block; /* Helps with spacing if needed */
     transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
-.g5_button_link_xtra:hover, .g6_button_link_xtra:hover {
-    color: var(--secondary-color) !important;
+.homeButton:hover, .gen5Button:hover, .gen6Button:hover {
+    background-color: var(--accent2-color); /* Optional: Background color for visibility */
+    border: 6px solid var(--accent3-color);
+}
+
+.homeButton a:hover, .gen5Button a:hover, .gen6Button a:hover {
+    color: var(--nav-link-color);
 }
 
 body {
@@ -183,16 +200,27 @@ h1 {
     width: 30%;
 }
 
+.evoLineNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+}
+
 .nextButton {
-  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
 }
 
 .evoLine {
-    width: 50%;
+  width: 75%;
+  height: auto;
+  margin: 0px;
 }
 
 .previousButton {
-  clip-path: polygon(100% 20%, 40% 20%, 40% 0%, 0% 50%, 40% 100%, 40% 80%, 100% 80%);
+    clip-path: polygon(100% 20%, 40% 20%, 40% 0%, 0% 50%, 40% 100%, 40% 80%, 100% 80%);
 }
 
 .nextButton, .previousButton {
@@ -200,7 +228,6 @@ h1 {
   height: 50px;
   background-color: var(--accent1-color);
   color: var(--headline-color-on-color); /* White text */
-  border: none;
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
@@ -208,9 +235,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s;
 }
 
 .nextButton:hover, .previousButton:hover {
-  background-color: var(--accent2-color); /* darker purple for hover */
+  background-color: var(--accent2-color);
 }
