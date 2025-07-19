@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --primary-color: #EFF9F0   ;
+  --secondary-color: #CC2936 ;
+  --accent1-color: #247BA0;
+  --accent2-color: #4C1A57;
+  --accent3-color: #3D3A4B;
+  --accent4-color: #FDCA40;
+  --accent5-color: #FFA69E;
 
+  --heading-font: PokemonGenThreeBattle;
+  --paragraph-font: PokemonEmeraldNarrow, Lato, Helvetica, sans-serif;
+
+  --headline-color-on-white: #247BA0;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #3D3A4B; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #EFF9F0; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #CC2936; /* paragraph background color */
+  --nav-link-color: #FFA69E;
+  --nav-background-color: #4C1A57;
+  --nav-hover-link-color: #FDCA40;
+  --nav-hover-background-color: #3D3A4B;
+}
 
 html, body{
    min-height: 100vh;
@@ -22,14 +43,42 @@ html, body{
 .hero-text {
     text-align: center;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0); 
     font-family: "Boldonse", system-ui;
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
 }
+
+#homepage-title {
+    margin: 0px;
+}
+
+#site-plan {
+    margin-top: 0px;
+}
+
+.hero-text a {
+    color: rgb(0, 0, 0); 
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.hero-text a:hover {
+    color: var(--accent4-color); 
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
 .g5_button_link_xtra{
     text-decoration: none; /* Removes underline */
     font-size: 2.5rem; /* Makes the text large */
@@ -38,10 +87,6 @@ html, body{
     font-weight: bold; /* Optional: Make it bold */
     display: inline-block; /* Helps with spacing if needed */
     transition: color 0.3s ease; /* Smooth color change on hover */
-}
-
-.g6_button_link_xtra:hover {
-    color: rgba(0, 0, 0, 0) !important;
 }
 
 .g6_button_link_xtra{
@@ -54,8 +99,8 @@ html, body{
     transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
-.g5_button_link_xtra:hover {
-    color: rgba(0, 0, 0, 0);
+.g5_button_link_xtra:hover, .g6_button_link_xtra:hover {
+    color: var(--accent3-color) !important;
 }
 
 

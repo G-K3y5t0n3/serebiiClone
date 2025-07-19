@@ -2,43 +2,35 @@
 
 @font-face {
   font-family: PokemonEmeraldNarrow;
-  src: url(../../serebiiClone/SC-styles/fonts/pokemon-emerald-narrow.ttf);
-
+  src: url(../../serebiiClone/site-plan/SC-styles/fonts/pokemon-emerald-narrow.ttf);
 }
 
 @font-face {
   font-family: PokemonGenThreeBattle;
-  src: url(../../serebiiClone/SC-styles/fonts/pokemon-gen3-battle.otf);
+  src: url(../../serebiiClone/site-plan/SC-styles/fonts/pokemon-gen3-battle.otf);
 }
 
- :root{
-    --heading-font: PokemonGenThreeBattle;
-    --paragraph-font: PokemonEmeraldNarrow, Lato, Helvetica, sans-serif;
+ :root {
+  --primary-color: #EFF9F0   ;
+  --secondary-color: #CC2936 ;
+  --accent1-color: #247BA0;
+  --accent2-color: #4C1A57;
+  --accent3-color: #3D3A4B;
+  --accent4-color: #FDCA40;
+  --accent5-color: #FFA69E;
 
-    --primary-color: #EFF9F0   ;
-    --secondary-color: #CC2936 ;
-    --accent1-color: #247BA0;
-    --accent2-color: #4C1A57;
-    --accent3-color: #3D3A4B;
-    --accent4-color: #FDCA40;
-    --accent5-color: #FFA69E;
- }
- body {
-    background-color: #EFF9F0;
-    font-family: var(--paragraph-font);
-    color: #247BA0;
-    padding: 50px;
-    box-sizing: border-box;
-}
+  --heading-font: PokemonGenThreeBattle;
+  --paragraph-font: PokemonEmeraldNarrow, Lato, Helvetica, sans-serif;
 
-h1, h2, h3 {
-    font-size: 35px;
-    font-family: var(--paragraph-font);
-    background-color: #CC2936;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
+  --headline-color-on-white: #247BA0;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #3D3A4B; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #EFF9F0; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #CC2936; /* paragraph background color */
+  --nav-link-color: #FFA69E;
+  --nav-background-color: #4C1A57;
+  --nav-hover-link-color: #FDCA40;
+  --nav-hover-background-color: #3D3A4B;
 }
 
 .navigationButtons {
@@ -84,10 +76,6 @@ h1, h2, h3 {
     transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
-.g5_button_link_xtra:hover {
-    color: rgba(0, 0, 0, 0);
-}
-
 .g6_button_link_xtra{
     text-decoration: none; /* Removes underline */
     font-size: 2.5rem; /* Makes the text large */
@@ -98,84 +86,44 @@ h1, h2, h3 {
     transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
-.g6_button_link_xtra:hover {
-    color: rgba(0, 0, 0, 0) !important;
+.g5_button_link_xtra:hover, .g6_button_link_xtra:hover {
+    color: var(--secondary-color) !important;
 }
 
-/* --------------------------------------------------------------------------------------------------------------- */
+body {
+    background-color: var(--primary-color);
+    font-family: var(--paragraph-font);
+    color: #247BA0;
+    padding: 50px;
+    box-sizing: border-box;
+}
 
-#section1{
-    display: grid;
+.pokemon {
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .5fr .25fr .25fr 1fr;
     border: #247BA0 solid 6px; 
-    margin:10px 10px 10px 10px; 
-}
-h1{
-    grid-column: 2/4;
-    grid-row: 1/2;
-    margin-left: 0;
-    margin-right: 20px;
-    margin-bottom: 50px;
+    margin:10px 10px 10px 10px;  */
+    display: flex;
+    flex-direction: column;
 }
 
-#section2{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr .25fr .25fr 2fr;
-    border: #247BA0 solid 6px; 
-    margin:10px 10px 10px 10px; 
-}
-h2{
-    grid-column: 2/4;
-    grid-row: 1/2;
-    margin-left: 0;
-    margin-right: 20px;
-    margin-bottom: 50px;
+.pokeInfo {
+    display: flex;
 }
 
-#section3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .5fr .25fr .25fr 1fr;
-    border: #247BA0 solid 6px; 
-    margin:10px 10px 10px 10px; 
-}
-h3{
-    grid-column: 2/4;
-    grid-row: 1/2;
-    margin-left: 0;
-    margin-right: 20px;
-    margin-bottom: 50px;
-}
-.img1{
-    grid-column: 1/2;
-    grid-row: 1/3;
-    display: block;
-    margin: auto;
-    margin-left: 20px;
-    margin-top: 20px;
+.spriteImage {
+    margin: 20px;
     padding: 0;
-    width: 50%;
-}
-.img2{
-    grid-column: 1/2;
-    grid-row: 3/5;
-    display: block;
-    margin: auto;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 50%;
+    width: 40%;
 }
 
-.img3{
-    grid-column: 2/5;
-    grid-row: 4/5;
-    margin-left: 75px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+.pokedex {
+    display: flex;
+    flex-direction: column;
 }
-.p{
+
+.pokedexDescription {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -184,7 +132,13 @@ h3{
     margin-right: 20px;
     margin-bottom: 0; 
 }
-.p1{
+
+.sAndw {
+    display: flex;
+    justify-content: center;
+}
+
+.weaknesses {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
@@ -192,8 +146,10 @@ h3{
     grid-row: 3/4;
     color: #4C1A57;
     margin-top: 20px;
+    margin-right: 20px;
 }
-.p2{
+
+.strengths {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
@@ -201,4 +157,56 @@ h3{
     grid-row: 3/4;
     color: #4C1A57;
     margin-top: 20px;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: var(--paragraph-font);
+    background-color: #CC2936;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pokeInfoP2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pokeStats {
+    width: 30%;
+}
+
+.nextButton {
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+
+.evoLine {
+    width: 50%;
+}
+
+.previousButton {
+  clip-path: polygon(100% 20%, 40% 20%, 40% 0%, 0% 50%, 40% 100%, 40% 80%, 100% 80%);
+}
+
+.nextButton, .previousButton {
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent1-color);
+  color: var(--headline-color-on-color); /* White text */
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--heading-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.nextButton:hover, .previousButton:hover {
+  background-color: var(--accent2-color); /* darker purple for hover */
 }
