@@ -239,4 +239,49 @@ h1 {
 
 .nextButton:hover, .previousButton:hover {
   background-color: var(--accent2-color);
+} 
+
+@media (max-width: 768px) {
+    .pokeInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spriteImage img {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .pokeInfoP2 {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .pokeStats{
+        width: 70%;
+    }
+
+    .evoLine {
+        width: 100%;
+    }
+}
+
+@media (max-width: 426px) {
+    .navigationButtons {
+        flex-direction: column;
+    }
+
+    .spriteImage {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .pokeStats{
+        width: 110%;
+    }
+
+    .evoLine {
+        width: 105%;
+    }
+
 }

@@ -37,7 +37,7 @@ const pokemon = [
 function pokedexInfoTemplate(pokemon) {
 	return `<div class="pokeInfo">
             <div class="spriteImage">
-                <img src="${pokemon.sprite}" alt="snivy">
+                <img src="${pokemon.sprite}">
             </div>
 
             <div class="pokedex">
@@ -60,42 +60,6 @@ function pokedexInfoTemplate(pokemon) {
 
             </div>
         </div>
-        <!---->
-        <div class="pokeInfoP2">
-            <img src="${pokemon.stats}" class="pokeStats" alt="snivystats">
-            <button class="nextButton" aria-label="Next">&#9654;</button>
-            <img src="${pokemon.evolution_line}" class="evoLine" alt="snivyevo">
-            <button class="previousButton" aria-label="Previous">&#9664;</button>
-        </div>`;
-}
-
-function pokedexInfoTemplate(pokemon) {
-	return `<div class="pokeInfo">
-            <div class="spriteImage">
-                <img src="${pokemon.sprite}" alt="snivy">
-            </div>
-
-            <div class="pokedex">
-                <h1>${pokemon.name} - ${pokemon.classification} Pokémon - ${pokemon.type}</h1>
-                <p class="pokedexDescription">
-                    ${pokemon.pokedex_entry}
-                </p>
-
-                <div class="sAndw">
-                    <p class="weaknesses">
-                        Weak Against:<br>
-                        ${weaknessesTemplate(pokemon.weaknesses)}
-                    </p>
-
-                    <p class="strengths">
-                        Strong Against:<br>
-                        ${strengthsTemplate(pokemon.strengths)}
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <!---->
         <div class="pokeInfoP2">
             <img src="${pokemon.stats}" class="pokeStats" alt="snivystats">
             <div class="evoLineNav">
@@ -107,20 +71,10 @@ function pokedexInfoTemplate(pokemon) {
 }
 
 function weaknessesTemplate(weaknesses) {
-	// let html = ''
-	// weaknesses.forEach(element => {
-	// 	html += ` ${element} |`
-	// });
-	// return html;
     return weaknesses.join(" | ");
 }
 
 function strengthsTemplate(strengths) {
-	// let html = ''
-	// strengths.forEach(element => {
-	// 	html += ` ${element} |`
-	// });
-	// return html;
     return strengths.join(" | ");
 }
 
@@ -141,14 +95,12 @@ function pokeInfoRenderStabilizer() {
 }
 
 function nextPokeInfo() {
-    // alert('Button Works!')
     pokeInfoIndex = (pokeInfoIndex + 1) % pokemon.length;
     pokeInfoRenderStabilizer();
 }
 
 function previousPokeInfo() {
-    // alert('Button Works!')
-    pokeInfoIndex = (pokeInfoIndex - 1 + pokemon.length) % pokemon.length; // Loop backward
+    pokeInfoIndex = (pokeInfoIndex - 1 + pokemon.length) % pokemon.length;
     pokeInfoRenderStabilizer();
 }
 

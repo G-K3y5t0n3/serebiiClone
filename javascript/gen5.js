@@ -37,7 +37,7 @@ const pokemon = [
 function pokedexInfoTemplate(pokemon) {
 	return `<div class="pokeInfo">
             <div class="spriteImage">
-                <img src="${pokemon.sprite}" alt="snivy">
+                <img src="${pokemon.sprite}">
             </div>
 
             <div class="pokedex">
@@ -60,7 +60,6 @@ function pokedexInfoTemplate(pokemon) {
 
             </div>
         </div>
-        <!---->
         <div class="pokeInfoP2">
             <img src="${pokemon.stats}" class="pokeStats" alt="snivystats">
             <div class="evoLineNav">
@@ -72,20 +71,10 @@ function pokedexInfoTemplate(pokemon) {
 }
 
 function weaknessesTemplate(weaknesses) {
-	// let html = ''
-	// weaknesses.forEach(element => {
-	// 	html += ` ${element} |`
-	// });
-	// return html;
     return weaknesses.join(" | ");
 }
 
 function strengthsTemplate(strengths) {
-	// let html = ''
-	// strengths.forEach(element => {
-	// 	html += ` ${element} |`
-	// });
-	// return html;
     return strengths.join(" | ");
 }
 
@@ -106,14 +95,12 @@ function pokeInfoRenderStabilizer() {
 }
 
 function nextPokeInfo() {
-    // alert('Button Works!')
     pokeInfoIndex = (pokeInfoIndex + 1) % pokemon.length;
     pokeInfoRenderStabilizer();
 }
 
 function previousPokeInfo() {
-    // alert('Button Works!')
-    pokeInfoIndex = (pokeInfoIndex - 1 + pokemon.length) % pokemon.length; // Loop backward
+    pokeInfoIndex = (pokeInfoIndex - 1 + pokemon.length) % pokemon.length;
     pokeInfoRenderStabilizer();
 }
 
